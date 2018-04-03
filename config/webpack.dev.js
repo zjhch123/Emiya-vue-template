@@ -11,7 +11,8 @@ config.devServer = {
   contentBase: paths.appSrc,
   inline: true,
   hot: true,
-  publicPath: '/'
+  publicPath: '/',
+  host: '0.0.0.0'
 };
 
 config.module.rules.push({
