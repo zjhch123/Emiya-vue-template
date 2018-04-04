@@ -3,6 +3,7 @@ const paths = require('./paths');
 const config = require('./webpack.base.js');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin');
+const address = require('address')
 
 config.devServer = {
   historyApiFallback: true,
@@ -12,7 +13,7 @@ config.devServer = {
   inline: true,
   hot: true,
   publicPath: '/',
-  host: '0.0.0.0'
+  host: address.ip() || '0.0.0.0'
 };
 
 config.module.rules.push({

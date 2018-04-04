@@ -40,6 +40,7 @@
     "webpack": "^3.6.0"
   },
   "dependencies": {
+    "address": "^1.0.3",
     "babel-helper-call-delegate": "^6.24.1",
     "babel-helper-define-map": "^6.26.0",
     "babel-helper-get-function-arity": "^6.24.1",
